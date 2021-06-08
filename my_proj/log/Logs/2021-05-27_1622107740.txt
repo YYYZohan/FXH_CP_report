@@ -1,0 +1,100 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+  DataFrame  Columns  Rows
+0       df1        8   249
+1       df2        8   249
+
+Column Summary
+--------------
+
+Number of columns in common: 7
+Number of columns in df1 but not in df2: 1
+Number of columns in df2 but not in df1: 1
+
+Row Summary
+-----------
+
+Matched on: index
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 249
+Number of rows in df1 but not in df2: 0
+Number of rows in df2 but not in df1: 0
+
+Number of rows with some compared columns unequal: 51
+Number of rows with all compared columns equal: 198
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 4
+Number of columns compared with all values equal: 3
+Total number of values which compare unequal: 116
+
+Columns with Unequal Values or Types
+------------------------------------
+
+     Column df1 dtype df2 dtype  # Unequal  Max Diff  # Null Diff
+3       ast   float64    object         20       2.1            0
+0  playerid     int64    object          0       0.0            0
+4       pts   float64    object         27       5.5            0
+1       reb    object    object         39       1.8            0
+2       stl    object    object         30       0.4            0
+5    teamid     int64    object          0       0.0            0
+
+Sample Rows with Unequal Values
+-------------------------------
+
+                                index reb (df1) reb (df2)
+28   0b315c789381a4a88d76a2b0f79edd4a       8.9       9.0
+57   efac2da5955f887d3bbe1d860a536648       2.0       2.1
+146  358baef9d528b82a86f89433b41ed28c       3.0       2.5
+123  84cbfe3591284443df5a88f3ef72fe26       2.8       3.9
+93   b791b85f16d23d065c65dc0f4bdddcde       9.9      10.0
+215  7c2a987f988df09fbb1a01e453d39324       1.6       1.9
+0    117a06bdb4adaf782db4931b40c9f354       4.4       4.1
+50   184ddba9dc16c11acf673a48441bd325       2.4       2.3
+84   14d3cbb71d7770d9bd63d00014280bb3       5.2       5.3
+106  cf2d8e309230b002fe0e11b0a56d1024       5.3       5.2
+
+                                index stl (df1) stl (df2)
+75   6b6421bebbab2ca66f96e6d320d4bb2b       1.1       1.0
+36   bc4d42ade584e1757243388f3cc0ab4d       0.6       0.4
+148  7e4a22b91353732bc4d0d073bfdc57bd       0.8       0.9
+76   77de1f392e63561e43a1b3a07aecc7a0       0.8       0.9
+72   c28641b2212f3e7590d96c2a620a69ba       0.8       0.7
+123  84cbfe3591284443df5a88f3ef72fe26       0.5       0.8
+106  cf2d8e309230b002fe0e11b0a56d1024       0.5       0.8
+2    f95a63979985bddf3f66d48543925919       0.7       0.5
+44   dbf043269dc6f3ccb4b5720a05b58a39       0.8       0.7
+244  1005540d5fa4d3ada1f97c40806e44c8       1.0       0.7
+
+                                index  ast (df1) ast (df2)
+72   c28641b2212f3e7590d96c2a620a69ba        1.9       1.3
+215  7c2a987f988df09fbb1a01e453d39324        0.5       0.7
+146  358baef9d528b82a86f89433b41ed28c        1.8       1.7
+123  84cbfe3591284443df5a88f3ef72fe26        0.8       1.2
+90   9916ba1d904242e24d0995f0f43af720        1.8       1.7
+244  1005540d5fa4d3ada1f97c40806e44c8        1.7       1.4
+38   d795eff1f76490273cd3316246b96335        1.6       1.9
+156  d93da6f8e54cc8114d63916471240fa9        2.2       3.2
+107  8c85bd34c209639f1408aeaa786a0933        5.5       3.4
+179  69e798ff680ad91c9f7b83c25df70d1b        2.2       1.9
+
+                                index  pts (df1) pts (df2)
+106  cf2d8e309230b002fe0e11b0a56d1024       11.2      11.6
+179  69e798ff680ad91c9f7b83c25df70d1b        9.2       7.2
+75   6b6421bebbab2ca66f96e6d320d4bb2b       16.2      15.3
+215  7c2a987f988df09fbb1a01e453d39324        8.0       7.6
+79   3dad3d20c404499d39b9335bcd196924        3.9       4.4
+90   9916ba1d904242e24d0995f0f43af720       10.0       9.7
+36   bc4d42ade584e1757243388f3cc0ab4d       11.2       7.0
+2    f95a63979985bddf3f66d48543925919       10.1       7.0
+107  8c85bd34c209639f1408aeaa786a0933       12.0       8.2
+93   b791b85f16d23d065c65dc0f4bdddcde       13.2      12.8
+

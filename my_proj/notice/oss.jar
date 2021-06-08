@@ -1,0 +1,25 @@
+// HSS服务器端地址
+String addr = "https://hss.hupu.com";
+// appid，在Kaleido管理平台申请后得到
+String appKey = "<yourAppKey>";
+// 密钥，在Kaleido管理平台申请后得到
+String secretKey = "<yourSecretKey>";
+// 模块
+String module = "<yourModule>";
+ 
+// 创建HSS客户端实例
+HSSClient hssClient = new HSSClientBuilder(addr, appkey, secretKey)
+                    .module(module)
+                    .build();
+// 文件名
+// 注意：objectName参数是资源的全路径名，比如“hssmgt/1.png”，并且不要以 / 开头，要保证资源的路径在你申请的授权路径下，不然会报没有权限。
+String objectName = "<objectName>";
+// 本地文件
+File localFile = new File("<yourLocalFilePath>");
+// 获取文件
+PutResult putResult = hssClient.putObject(objectName, localFile);
+// 获取文件上传url，私有bucket通过getObject获取对象。
+String url = putResult.getUrl();
+ 
+// 关闭客户端
+hssClient.shutdown();

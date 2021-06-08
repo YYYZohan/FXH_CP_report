@@ -1,0 +1,85 @@
+[teamStandingList]
+# 球队接口
+url = "https://games.mobileapi.hupu.com/3/7.5.36/basketballapi/teamStandingList"
+data = '''
+        {
+        "offline" : "json",
+        "competitionLeagueType" : "nba",
+        "competitionType" : "nba"
+        }
+        '''
+header = '''
+        {
+        "accept" : "*/*",
+        "user-agent" : "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 isp/460.02 network/WIFI prokanqiu/7.5.36 iPhone12,1 hpweb_request"
+        }
+        '''
+
+[teamPlayerList]
+# 球队球员接口
+url = "https://games.mobileapi.hupu.com/3/7.5.36/basketballapi/teamPlayerList"
+data = '''
+        {
+        "competitionType":"nba",
+        "competitionLeagueType":"nba",
+        "clientId":"85362714",
+        "bddid":"ZUPRETLIYB4MYRE4NQTOTUAZCJYSOXGPZZTWH6LZEOWGKPLCEZJQ01",
+        "advId":"94C699B0-3699-46D9-AABE-1FC4BE9BF21E",
+        "sign":"39988efe2fbdf05d73ad92a543a5f062",
+        "vertical":"1",
+        "deviceId":"BF3bVEqguE9VR3tpPTIwQsaVXE0pud+b+pr5qWSdXajR3WosdCUR/+dfPsbhvRaxdiRvJZn14pHX2iWJZqdfwXw==",
+        "token":"MzE0NjAzNzg=|MTYxOTUwNTQ2Nw==|ab19567b502254600f5722f912ea6768",
+        "night":"1",
+        "crt":"1619687361",
+        "client":"5B10A63F-DA7E-48D2-A1C7-C0A3592E9BCF",
+        "time_zone":"Asia/Shanghai",
+        "leagueType":"nba"
+        }
+        '''
+header = '''
+        {
+        "User-Agent" : "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 isp/460.02 network/WIFI prokanqiu/7.5.36 iPhone12,1"
+        }
+        '''
+
+
+[playerSeasonRank]
+# 球员赛季数据接口
+url = "https://games.mobileapi.hupu.com/3/7.5.36/basketballapi/playerSeasonRank"
+data = '''
+        {
+        "offline":"json",
+        "competitionLeagueType":"nba",
+        "competitionType":"nba",
+        "client":"5B10A63F-DA7E-48D2-A1C7-C0A3592E9BCF",
+        "webp":"0"
+        }
+        '''
+header = '''
+        {
+        "accept" : "*/*",
+        "user-agent" : "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 isp/460.02 network/WIFI prokanqiu/7.5.36 iPhone12,1 hpweb_request",
+        "accept-language" : "zh-cn",
+        "accept-encoding" : "gzip, deflate, br"
+        }
+        '''
+
+
+[playerSingleDimensionSeasonRank]
+url = "https://games.mobileapi.hupu.com/3/7.5.37/basketballapi/playerSingleDimensionSeasonRank"
+data = '''
+        {
+        "season" : "2020-2021",
+        "playerType" : "normal",
+        "competitionStageType" : "REGULAR"
+        }
+        '''
+header = '''
+        {
+        "accept" : "application/json, text/plain, */*",
+        "content-type" : "application/json;charset=utf-8",
+        "user-agent" : "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 isp/460.02 network/WIFI prokanqiu/7.5.36 iPhone12,1 hpweb_request",
+        "accept-language" : "zh-cn",
+        "accept-encoding" : "gzip, deflate, br"
+        }
+        '''

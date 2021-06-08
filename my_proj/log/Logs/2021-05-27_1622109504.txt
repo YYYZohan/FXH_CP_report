@@ -1,0 +1,119 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+  DataFrame  Columns  Rows
+0        bt        8   531
+1       api        8   534
+
+Column Summary
+--------------
+
+Number of columns in common: 8
+Number of columns in bt but not in api: 0
+Number of columns in api but not in bt: 0
+
+Row Summary
+-----------
+
+Matched on: index, playerid
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 531
+Number of rows in bt but not in api: 0
+Number of rows in api but not in bt: 3
+
+Number of rows with some compared columns unequal: 145
+Number of rows with all compared columns equal: 386
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 5
+Number of columns compared with all values equal: 3
+Total number of values which compare unequal: 358
+
+Columns with Unequal Values or Types
+------------------------------------
+
+       Column bt dtype api dtype  # Unequal  Max Diff  # Null Diff
+4         ast  float64    object         69       2.2            0
+0  playername   object    object         15       0.0            0
+3         pts  float64    object         90       7.8            0
+1         reb   object    object        106       6.5            0
+2         stl   object    object         78       0.7            0
+
+Sample Rows with Unequal Values
+-------------------------------
+
+                                index            playerid playername (bt) playername (api)
+505  3af824a8300b9983e14bbf95169eebc7    1901000000447870             罗伯森          安德烈-罗伯森
+512  85cb947de9e2666aa519f4e51b787669    1901000000469067              库克            奎因-库克
+521  9aaef97cfee408815af0020c3c8912e8    1901000000479949              鲍文               鲍恩
+497  8d93555a280c77d750ff1b8e0a067ae4  787405166306394112             哈根斯              黑根斯
+133  239fd77c8b24a6e7f50fa572ec9c70d5    1901000000473033             布莱恩               布朗
+510  639728faa69b4373d9908632d508aa49    1901000023124410             波伊尔             普瓦里耶
+519  c747bd0115f42c863a3f4d853e6fab52    1901000000443275             托马斯          以赛亚-托马斯
+527  ffb2bcecfb4fa23c1862960031f6cac1    1901000000473448             库鲁斯              库鲁茨
+503  82fde88ec8d0f7324bd9b144ac101c60    1901000000473678             亚当斯           杰伦-亚当斯
+524  00500484b7198a555089aeff471f7a21    1901000040064318             罗宾逊          贾斯廷-罗宾逊
+
+                                index            playerid reb (bt) reb (api)
+4    01764c1c0ba2d068f5f651e93780b6e0  787405138733039616      4.8       4.9
+507  c1094a21638e9266c4bac0ceb3a7f463    1901000012270827      1.2       1.3
+310  8e21a4a68b1b754d7c57a0000a009d03    1901000000468290      3.3       3.1
+106  184ddba9dc16c11acf673a48441bd325    1901000000473045      2.4       2.3
+476  632139a7459c81af0babf238f0637f5e    1901000000468280      3.9       4.3
+68   bc4d42ade584e1757243388f3cc0ab4d  787405172669153280      5.0       3.5
+18   43aee1e395d24e96f71fcd35fe8c619a    1901000000473713      1.8       1.7
+226  a257bc1a5ed16953a314e6b081a62d7f    1901000000470833      2.6       2.4
+234  d47384c339b097e3837796269502b015    1901000000471499      6.0       2.3
+192  c57a21886379f4c66de1bc10ff620e0b    1901000000479725      2.9       1.5
+
+                                index            playerid stl (bt) stl (api)
+75   965d29f5500fd362ad235961446fd8f5    1901000000447903      1.3       0.6
+66   70703d2bc72202c53239496e5b6651bc    1901000000480185      0.5       0.3
+248  84cbfe3591284443df5a88f3ef72fe26    1901000000441435      0.5       0.8
+407  0f6b56e231a519f571b4044e3f21a0e2    1901000000441302      0.1       0.3
+204  eb8092e7b263611e01ebcce1ceaa5377    1901000000467917      0.8       0.9
+482  1005540d5fa4d3ada1f97c40806e44c8    1901000008269823      1.0       0.7
+345  0577ac0e424f23a660974491d874d4a0  787405175106043904      0.8       0.7
+324  960b938670171a2e84c86ed39739a295    1901000000470578      0.9       0.5
+222  8c85bd34c209639f1408aeaa786a0933    1901000000443159      1.2       1.0
+490  47fb9f1510a7f2c131e8a1ff17220a10    1901000000443430      1.1       0.8
+
+                                index          playerid  pts (bt) pts (api)
+33   92356c555ba56456ec85f3b49bc23289  1901000000441070      10.0      11.3
+147  ac383d4c632b82bf77faa3e989c78880  1901000000448247       6.4       5.5
+365  f42b289fc515490a2a58f04f5b8fbfdb  1901000000471161       2.8       2.4
+76   0a31c27d07072009a821e96c33681f46  1901000053264016       5.6       5.5
+18   43aee1e395d24e96f71fcd35fe8c619a  1901000000473713       6.9       5.5
+471  245d37268f6802b43048f0902b0c6f36  1901000000472367       7.2       5.5
+356  25604bb611c430b3aa1ec276ff4f3daa  1901000000471097       6.1       5.2
+359  b656bc726363dfc204e90473e95ae400  1901000000442731       5.2       6.4
+66   70703d2bc72202c53239496e5b6651bc  1901000000480185      11.1       6.9
+522  10496671fdf710599a2c2e5f50159fd7  1901000048114300       6.1       6.0
+
+                                index            playerid  ast (bt) ast (api)
+72   9ae9c70a10afa3d0f632f5bec54173fa    1901000000448410       2.3       2.0
+355  733218260c1bfcb429d46772a37dd3fb    1901000000447604       4.1       2.9
+242  437a862b50de450fbf3ec0bb790e6768    1901000000442298       2.8       2.4
+68   bc4d42ade584e1757243388f3cc0ab4d  787405172669153280       2.8       1.7
+163  3dad3d20c404499d39b9335bcd196924    1901000000448394       0.4       1.0
+220  cf2d8e309230b002fe0e11b0a56d1024    1901000000473086       1.2       1.9
+409  11956aa411250c996410087739e82ae9    1901000094464168       0.8       1.0
+149  d7c7060f367ed86db20c40d96be613a9    1901000000472463       1.1       0.8
+142  d7bde4733970a6af70ba535ed4629035    1901000000443449       3.1       3.4
+476  632139a7459c81af0babf238f0637f5e    1901000000468280       3.6       4.4
+
+Sample Rows Only in api (First 10 Columns)
+------------------------------------------
+
+             playerid     playername            teamid   pts  reb  ast  stl                             index
+532  1901000000441290          阿尔德里奇  1901000000501336  13.5  4.5  1.9  0.4  515eefaa1812d91bd6e3b95fd3e41a4b
+531  1901000000475480  Elijah Bryant  1901000000501294  16.0  6.0  3.0  0.0  bd1a03516b593d7bbe2ba3fd9c55008d
+533  1903000018490451   Gabriel Deck  1901000000501329   8.4  4.0  2.4  0.8  b00b77f9bbeb78d0e0bb5e2920c1b718
+

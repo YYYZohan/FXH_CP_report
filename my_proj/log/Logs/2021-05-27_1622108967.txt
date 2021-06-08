@@ -1,0 +1,104 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+  DataFrame  Columns  Rows
+0     贝泰数据源        8   247
+1    篮球接口返回        8   247
+
+Column Summary
+--------------
+
+Number of columns in common: 8
+Number of columns in 贝泰数据源 but not in 篮球接口返回: 0
+Number of columns in 篮球接口返回 but not in 贝泰数据源: 0
+
+Row Summary
+-----------
+
+Matched on: index
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 247
+Number of rows in 贝泰数据源 but not in 篮球接口返回: 0
+Number of rows in 篮球接口返回 but not in 贝泰数据源: 0
+
+Number of rows with some compared columns unequal: 50
+Number of rows with all compared columns equal: 197
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 5
+Number of columns compared with all values equal: 3
+Total number of values which compare unequal: 111
+
+Columns with Unequal Values or Types
+------------------------------------
+
+       Column 贝泰数据源 dtype 篮球接口返回 dtype  # Unequal  Max Diff  # Null Diff
+4         ast     float64       object         19       2.1            0
+2    playerid       int64       object          0       0.0            0
+5  playername      object       object          1       0.0            0
+6         pts     float64       object         25       5.5            0
+3         reb      object       object         37       1.8            0
+0         stl      object       object         29       0.4            0
+1      teamid       int64       object          0       0.0            0
+
+Sample Rows with Unequal Values
+-------------------------------
+
+                                index stl (贝泰数据源) stl (篮球接口返回)
+117  437a862b50de450fbf3ec0bb790e6768         0.4          0.6
+105  8c85bd34c209639f1408aeaa786a0933         1.2          1.0
+242  1005540d5fa4d3ada1f97c40806e44c8         1.0          0.7
+175  7ac73898f1c8c1a56a9e9e66ec5eda80         0.4          0.5
+153  8e21a4a68b1b754d7c57a0000a009d03         1.3          1.2
+73   6b6421bebbab2ca66f96e6d320d4bb2b         1.1          1.0
+31   aca69dd7b00514a4758e4ac06806edc7         0.7          0.6
+74   77de1f392e63561e43a1b3a07aecc7a0         0.8          0.9
+77   3dad3d20c404499d39b9335bcd196924         0.2          0.4
+146  7e4a22b91353732bc4d0d073bfdc57bd         0.8          0.9
+
+                                index reb (贝泰数据源) reb (篮球接口返回)
+91   b791b85f16d23d065c65dc0f4bdddcde         9.9         10.0
+73   6b6421bebbab2ca66f96e6d320d4bb2b         3.6          2.6
+144  358baef9d528b82a86f89433b41ed28c         3.0          2.5
+77   3dad3d20c404499d39b9335bcd196924         1.8          1.9
+22   beaf110c1ca6400c27b8eb0d34224657         3.4          3.3
+240  632139a7459c81af0babf238f0637f5e         3.9          4.3
+6    b033f07bcf8b9b42a5c3affacfd1ecf0         3.0          2.9
+154  d93da6f8e54cc8114d63916471240fa9         4.7          5.7
+85   464d5c27dd3029ea83bc2c7a34ce76e6         2.5          2.4
+177  69e798ff680ad91c9f7b83c25df70d1b         4.1          3.5
+
+                                index  ast (贝泰数据源) ast (篮球接口返回)
+177  69e798ff680ad91c9f7b83c25df70d1b          2.2          1.9
+144  358baef9d528b82a86f89433b41ed28c          1.8          1.7
+175  7ac73898f1c8c1a56a9e9e66ec5eda80          3.9          3.3
+213  7c2a987f988df09fbb1a01e453d39324          0.5          0.7
+121  84cbfe3591284443df5a88f3ef72fe26          0.8          1.2
+117  437a862b50de450fbf3ec0bb790e6768          2.8          2.4
+104  cf2d8e309230b002fe0e11b0a56d1024          1.2          1.9
+84   99f5d1377f6465ae564364a2f1876a6a          3.9          3.8
+9    43aee1e395d24e96f71fcd35fe8c619a          3.4          2.9
+105  8c85bd34c209639f1408aeaa786a0933          5.5          3.4
+
+                               index playername (贝泰数据源) playername (篮球接口返回)
+62  239fd77c8b24a6e7f50fa572ec9c70d5                布莱恩                  布朗
+
+                                index  pts (贝泰数据源) pts (篮球接口返回)
+105  8c85bd34c209639f1408aeaa786a0933         12.0          8.2
+77   3dad3d20c404499d39b9335bcd196924          3.9          4.4
+9    43aee1e395d24e96f71fcd35fe8c619a          6.9          5.5
+174  733218260c1bfcb429d46772a37dd3fb         19.0         13.5
+121  84cbfe3591284443df5a88f3ef72fe26          2.6          3.7
+36   d795eff1f76490273cd3316246b96335         11.7         11.2
+41   3e1adda992b4d8d308935347514e2892         14.9         14.7
+18   92356c555ba56456ec85f3b49bc23289         10.0         11.3
+104  cf2d8e309230b002fe0e11b0a56d1024         11.2         11.6
+1    f95a63979985bddf3f66d48543925919         10.1          7.0
+

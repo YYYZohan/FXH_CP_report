@@ -1,0 +1,95 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+  DataFrame  Columns  Rows
+0        bt        8   110
+1       api        8   110
+
+Column Summary
+--------------
+
+Number of columns in common: 8
+Number of columns in bt but not in api: 0
+Number of columns in api but not in bt: 0
+
+Row Summary
+-----------
+
+Matched on: index, playerid, teamid
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 110
+Number of rows in bt but not in api: 0
+Number of rows in api but not in bt: 0
+
+Number of rows with some compared columns unequal: 20
+Number of rows with all compared columns equal: 90
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 4
+Number of columns compared with all values equal: 4
+Total number of values which compare unequal: 44
+
+Columns with Unequal Values or Types
+------------------------------------
+
+  Column bt dtype api dtype  # Unequal  Max Diff  # Null Diff
+0    ast  float64    object          7       1.2            0
+3    pts  float64    object         10       5.5            0
+1    reb   object    object         13       1.8            0
+2    stl   object    object         14       0.4            0
+
+Sample Rows with Unequal Values
+-------------------------------
+
+                               index          playerid            teamid  ast (bt) ast (api)
+27  f9cf6ad1054f7bc9c0e7a2b2bef4cda6  1901000000442287  1901000000501336      10.9      10.8
+38  99f5d1377f6465ae564364a2f1876a6a  1901000000443109  1901000000501286       3.9       3.8
+50  cf2d8e309230b002fe0e11b0a56d1024  1901000000473086  1901000000501290       1.2       1.9
+81  733218260c1bfcb429d46772a37dd3fb  1901000000447604  1901000000501311       4.1       2.9
+96  bf987111f045964818639a4975f922fc  1901000000443405  1901000000501323       1.4       2.0
+15  d795eff1f76490273cd3316246b96335  1901000000473199  1901000000501279       1.6       1.9
+47  8daecd5d39d60aedc347ad8fb41ffb42  1901000000469457  1901000000501292       4.9       5.2
+
+                                index          playerid            teamid reb (bt) reb (api)
+27   f9cf6ad1054f7bc9c0e7a2b2bef4cda6  1901000000442287  1901000000501336      8.5       7.9
+13   0b315c789381a4a88d76a2b0f79edd4a  1901000000471478  1901000000501267      8.9       9.0
+81   733218260c1bfcb429d46772a37dd3fb  1901000000447604  1901000000501311      8.4       7.0
+48   171483d4f56c8f1348232c645facc063  1901000000469585  1901000000501292      5.2       5.3
+22   184ddba9dc16c11acf673a48441bd325  1901000000473045  1901000000501281      2.4       2.3
+96   bf987111f045964818639a4975f922fc  1901000000443405  1901000000501323     10.2      12.0
+102  568fa8663374fb7482cf2b5e1c9f1747  1901000000442697  1901000000501333      6.7       6.6
+38   99f5d1377f6465ae564364a2f1876a6a  1901000000443109  1901000000501286     11.5      11.7
+42   b791b85f16d23d065c65dc0f4bdddcde  1901000000470885  1901000000501288      9.9      10.0
+50   cf2d8e309230b002fe0e11b0a56d1024  1901000000473086  1901000000501290      5.3       5.2
+
+                               index          playerid            teamid stl (bt) stl (api)
+96  bf987111f045964818639a4975f922fc  1901000000443405  1901000000501323      1.1       1.4
+81  733218260c1bfcb429d46772a37dd3fb  1901000000447604  1901000000501311      1.4       1.1
+73  8e21a4a68b1b754d7c57a0000a009d03  1901000000468290  1901000000501325      1.3       1.2
+27  f9cf6ad1054f7bc9c0e7a2b2bef4cda6  1901000000442287  1901000000501336      1.3       1.2
+2   47bbe3403fe420068db25f6e406fe403  1901000000443378  1901000000501283      1.1       1.2
+99  c0b04efdbde188bb2f1b887bb0b00d39  1901000000443369  1901000000501323      1.2       1.3
+51  4a0e19b07b5d6962faf1084a16816373  1901000000448513  1901000000501290      0.7       0.6
+49  e942c072bb46835a5bd5c51aee0cfa8a  1901000000470793  1901000000501290      0.8       0.9
+46  eb8092e7b263611e01ebcce1ceaa5377  1901000000467917  1901000000501292      0.8       0.9
+15  d795eff1f76490273cd3316246b96335  1901000000473199  1901000000501279      0.8       0.6
+
+                               index          playerid            teamid  pts (bt) pts (api)
+15  d795eff1f76490273cd3316246b96335  1901000000473199  1901000000501279      11.7      11.2
+47  8daecd5d39d60aedc347ad8fb41ffb42  1901000000469457  1901000000501292      20.7      20.1
+73  8e21a4a68b1b754d7c57a0000a009d03  1901000000468290  1901000000501325      17.0      18.6
+96  bf987111f045964818639a4975f922fc  1901000000443405  1901000000501323      11.9      14.9
+38  99f5d1377f6465ae564364a2f1876a6a  1901000000443109  1901000000501286      21.5      23.4
+19  3e1adda992b4d8d308935347514e2892  1901000000442004  1901000000501273      14.9      14.7
+7   92356c555ba56456ec85f3b49bc23289  1901000000441070  1901000000501284      10.0      11.3
+42  b791b85f16d23d065c65dc0f4bdddcde  1901000000470885  1901000000501288      13.2      12.8
+81  733218260c1bfcb429d46772a37dd3fb  1901000000447604  1901000000501311      19.0      13.5
+50  cf2d8e309230b002fe0e11b0a56d1024  1901000000473086  1901000000501290      11.2      11.6
+

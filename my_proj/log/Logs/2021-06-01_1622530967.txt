@@ -1,0 +1,46 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+  DataFrame  Columns  Rows
+0     贝泰数据源        8   531
+1  篮球内部接口数据        7   534
+
+Column Summary
+--------------
+
+Number of columns in common: 3
+Number of columns in 贝泰数据源 but not in 篮球内部接口数据: 5
+Number of columns in 篮球内部接口数据 but not in 贝泰数据源: 4
+
+Row Summary
+-----------
+
+Matched on: index, playerid, teamid
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 531
+Number of rows in 贝泰数据源 but not in 篮球内部接口数据: 0
+Number of rows in 篮球内部接口数据 but not in 贝泰数据源: 3
+
+Number of rows with some compared columns unequal: 0
+Number of rows with all compared columns equal: 531
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 0
+Number of columns compared with all values equal: 3
+Total number of values which compare unequal: 0
+
+Sample Rows Only in 篮球内部接口数据 (First 10 Columns)
+-----------------------------------------------
+
+             playerid            teamid   pts  reb  ast  stl                             index
+531  1901000000475480  1901000000501294  16.0  6.0  3.0  0.0  bd1a03516b593d7bbe2ba3fd9c55008d
+533  1903000018490451  1901000000501329   8.4  4.0  2.4  0.8  b00b77f9bbeb78d0e0bb5e2920c1b718
+532  1901000000441290  1901000000501336  13.5  4.5  1.9  0.4  515eefaa1812d91bd6e3b95fd3e41a4b
+
